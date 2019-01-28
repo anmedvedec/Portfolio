@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Ana Medvedec</title>
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">		
+		<link rel="stylesheet" href="lightbox/css/lightbox.css">
+		<link rel="stylesheet" href="socicon/style.css">
+		<link rel="stylesheet" href="style.css">				
+		<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">			
+			<!-- ************** Zaglavlje / početak ************** -->
+			<div class="row zaglavlje">
+				<div class="row menu">
+					<a href="index.html" class="crta">Ana Medvedec</a>
+					<a href="kontakt.html" class="crta">Kontaktiraj me</a>
+				</div>
+			</div>
+			<!-- ************** Kontakt / početak ************** -->
+			<div class="row kontakt">
+				<div class="col-md-12">
+					<h2>Želiš ostvariti suradnju?</h2>
+					<h1><span class="dod">Pošalji poruku.</span></h1>
+					<form action="MAILTO:medvedec.ana1@gmail.com" method="post" enctype="text/plain">
+						<div class="form-group">							
+							<input type="text" class="form-control" id="name" placeholder="Tvoje ime">
+						</div>
+						<div class="form-group">							
+							<input type="text" class="form-control" id="subject" placeholder="Naslov poruke">
+						</div>	
+						<div class="form-group">							
+							<input type="email" class="form-control" id="e-mail" placeholder="Tvoja e-mail adresa">
+						</div>				
+						<div class="form-group">
+							<textarea class="form-control" id="message" rows="3" placeholder="Poruka"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Pošalji</button>
+					</form>
+				</div>
+			</div>
+			<!-- ************** Kontakt / kraj ************** -->
+			<!-- ************** Footer / početak ************** -->
+			<div class="row footer">
+					<div class="col-md-12 footer-content">
+					<a href="kontakt-en.html" class="crta">english</a>
+					</div>
+			</div>
+			<!-- ************** Footer / kraj ************** -->
+		</div>
+		<script src="bootstrap/jquery.min.js"></script>
+		<script src="bootstrap/popper.min.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
+		<script src="lightbox/js/lightbox.js"></script>
+		<script>
+			$('.hamburger').click(function(){
+				$('.main-menu').slideToggle();
+			});
+		</script>
+	</body>
+</html>

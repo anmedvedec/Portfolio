@@ -1,0 +1,227 @@
+body {
+	font-family: 'Aleo', serif;
+	font-size: 12pt;
+}
+/* ------ Zaglavlje / početak ------ */
+.zaglavlje {
+	height: auto;
+}
+.zaglavlje a {
+	color: black; 
+	font-size: 18pt;
+	text-decoration: none;
+	margin-top: 30px;
+	margin-left: 0px;
+}
+.zaglavlje p {
+	font-size: 18pt;
+	text-align: left;
+	width: 70%;
+	position: relative;
+	margin: 0;
+}
+
+.znati-vise a:first-child { display: block; }
+.material-icons {
+	vertical-align: middle;
+	padding-bottom:3px;
+}
+.znati-vise a .material-icons { transition: .3s all ease;}
+.znati-vise a:hover .material-icons { transform: translateX(10px);}
+.menu {
+	position: relative;
+	width:100%;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.menu a:nth-child(2) { 
+	position:absolute;
+	right:0;
+}
+
+.dod {color: #2516c7;}
+.crta, .crta:visited {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  display:inline-block;
+}
+.crta:hover { color: #000; }
+.crta:after, .crta:visited:after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #2516c7;
+  transition: 0.3s;
+}
+.crta:hover:after, .crta:visited:hover:after {width: 100%;}
+.crta.block, .crta:visited.block {
+  display: block;
+  padding: 0.3px;
+}
+.crta.block:hover, .crta:visited.block:hover {background: black;}
+@media screen and (max-width: 575px) {
+	.zaglavlje {
+		height: 250px;
+	}
+	.zaglavlje p {
+		display: none;
+	}
+	.zaglavlje a {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: 0;
+		font-size: 18pt;
+	}
+}
+/* ------ Zaglavlje / kraj ------ */
+/* ------ Galerija / početak ------ */
+.galerija {
+	position: relative;
+	cursor: zoom-in;
+}
+.galerija .slika .maska {
+	background-color: black;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	left: 10px;
+	bottom: 10px;
+	opacity: 0;
+	transition: 1s ease;
+}
+.galerija .slika:hover .maska {opacity: 0.6;}
+.galerija .slika .maska p {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.galerija .slika {padding: 10px;}
+.galerija .maska a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center; 
+}
+.galerija .maska .naziv-rada {
+	font-size: 14pt;
+	text-transform: uppercase;
+}
+.galerija .maska .kategorija {font-size: 12pt;}
+/* ------ Galerija / kraj ------ */
+
+/* ------ Kontakt / početak ------ */
+.kontakt {
+	padding: 50px 30px;
+	margin-top: 60px;
+}
+ h1 {
+	font-size: 21pt;
+	padding-bottom: 30px;
+}
+.kontakt input[type=text],
+.kontakt input[type=email],
+.kontakt textarea {
+	border: 2;
+	border-radius: 0;
+	width: 60%;
+	border-color: black;
+}
+.kontakt input {
+	height: 50px;
+	width: 60%;
+}
+.kontakt button[type=submit] {
+	background-color: white;
+	border: 2;
+	color: black; 
+	border-radius: 0;
+	border-color: black;
+	width: 20%;
+	height: 50px;
+}
+@media screen and (max-width:575px) {
+	.kontakt button[type=submit] {
+		width: 100%;
+	}
+}
+.kontakt ::placeholder {
+	font-size: 14pt;
+}
+/* ------ Kontakt / kraj ------ */
+
+/* ------ Footer / početak ------ */
+.footer {
+	height: 40px;
+	margin-bottom: 50px;
+}
+
+.footer a {
+	color: black;
+	font-size: 18pt;
+	text-decoration: none;
+	position: absolute;
+	right:0;
+}
+@media screen and (max-width:767px) {
+	.footer {
+		display: block;
+		text-align: right;
+	}
+}
+
+/* ------ Footer / kraj ------ */
+
+
+/* ------ Članci / početak ------ */
+
+h1 {font-size: 24pt;}
+h2 {font-size: 16pt;}
+h3 {font-size: 14pt;}
+.clanak h1 {
+	padding-top: 70px;
+	padding-bottom: 5px;
+}
+.clanak h2 {padding-bottom: 10px;}
+
+.col-md-4 {margin-top: 150px;}
+.col-md-7 p {font-size: 12pt;}
+.clanak a {
+	text-decoration: none;
+	color: black;
+}
+@media screen and (max-width:767px) {
+	.clanak h2 {margin-top: 20px;}
+}
+@media screen and (max-width:575px) {
+	.clanak h2 {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.clanak p {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+/* ------ Članci / kraj ------ */
+
+.o-meni, .uvod { margin-top: 60px; }
+.nav-radovi a:first-child .material-icons { width:30px;}
+.nav-radovi a { 
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+.nav-radovi a:hover { text-decoration: none;}
+.nav-radovi a:first-child { display: inline-block; }
+.nav-radovi a .material-icons { transition: .3s all ease;}
+.nav-radovi a:hover .material-icons { transform: translateX(10px);}
